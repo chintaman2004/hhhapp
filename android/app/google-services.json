@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "956435030582",
+    "project_id": "hhhapp-c22b5",
+    "storage_bucket": "hhhapp-c22b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956435030582:android:6c2f38a82dfdfcd6ceee97",
+        "android_client_info": {
+          "package_name": "com.example.hhhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956435030582-j0arrlopjfcvol8r1l4u8jg386a28517.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0DdXn8KT719DKTBHLxTXxAEYcQPsgBEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956435030582-j0arrlopjfcvol8r1l4u8jg386a28517.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
