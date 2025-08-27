@@ -80,11 +80,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyCDOCrDFu7VWHq0kam3ovhGuFwb19kGE6Q',
-    appId: '1:956435030582:web:99b6ceba7fa4d9d6ceee97',
+    appId: '1:956435030582:web:89ac68127c0175daceee97',
     messagingSenderId: '956435030582',
     projectId: 'hhhapp-c22b5',
     authDomain: 'hhhapp-c22b5.firebaseapp.com',
     storageBucket: 'hhhapp-c22b5.firebasestorage.app',
-    measurementId: 'G-G9ZGS2QQPP',
+    measurementId: 'G-55X1PV7DZM',
   );
+
 }

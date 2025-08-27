@@ -1,16 +1,32 @@
 import 'package:get/get.dart';
-import '../views/splash_view.dart';
-import '../views/signin_view.dart';
-import '../views/signup_view.dart';
-import '../views/home_view.dart';
+import 'package:getx_firebase_app/presentation/views/auth/signin_view.dart';
+import 'package:getx_firebase_app/presentation/views/auth/signup_view.dart';
+import 'package:getx_firebase_app/presentation/views/details/details_view.dart';
+import 'package:getx_firebase_app/presentation/views/home/home_view.dart';
+import 'package:getx_firebase_app/presentation/views/splash/splash_view.dart';
+import 'package:getx_firebase_app/routes/app_routes.dart';
 
 class AppPages {
-  static const initial = '/splash';
-
-  static final routes = [
-    GetPage(name: '/splash', page: () => SplashView()),
-    GetPage(name: '/signin', page: () => SignInView()),
-    GetPage(name: '/signup', page: () => SignUpView()),
-    GetPage(name: '/home', page: () => HomeView()),
+  static final pages = [
+    GetPage(
+      name: AppRoutes.SPLASH,
+      page: () => SplashView(),
+    ),
+    GetPage(
+      name: AppRoutes.SIGNUP,
+      page: () => SignupView(),
+    ),
+    GetPage(
+      name: AppRoutes.SIGNIN,
+      page: () => SigninView(),
+    ),
+    GetPage(
+      name: AppRoutes.HOME,
+      page: () => HomeView(),
+    ),
+    GetPage(
+      name: AppRoutes.DETAILS,
+      page: () => DetailsView(),
+    ),
   ];
 }
