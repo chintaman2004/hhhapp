@@ -1,36 +1,25 @@
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_firebase_app/core/bindings/auth_binding.dart';
-import 'package:getx_firebase_app/routes/app_pages.dart';
-import 'package:getx_firebase_app/routes/app_routes.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:your_app_name/routes/app_pages.dart';
+import 'package:your_app_name/core/theme/app_theme.dart';
+import 'package:your_app_name/shared/bindings/initial_binding.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // For web, we don't need Firebase.initializeApp() since we're using REST API
-  if (!kIsWeb) {
-    await Firebase.initializeApp();
-  }
-
-  runApp(const MyApp());
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GetX Firebase App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
-      initialRoute: AppRoutes.SPLASH,
-      initialBinding: AuthBinding(),
+      title: 'Property Finder',
+      theme: AppTheme.lightTheme,
+      initialRoute: AppRoutes.LOGIN,
       getPages: AppPages.pages,
+      initialBinding: InitialBinding(),
       debugShowCheckedModeBanner: false,
     );
   }

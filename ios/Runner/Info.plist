@@ -28,6 +28,21 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>com.googleusercontent.apps.YOUR_CLIENT_ID</string>
+    </array>
+  </dict>
+</array>
+<key>FacebookAppID</key>
+<string>YOUR_FACEBOOK_APP_ID</string>
+<key>FacebookDisplayName</key>
+<string>YOUR_APP_NAME</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

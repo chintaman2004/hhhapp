@@ -1,9 +1,10 @@
-// ignore_for_file: constant_identifier_names
-
 class AppRoutes {
-  static const String SPLASH = '/splash';
-  static const String SIGNUP = '/signup';
-  static const String SIGNIN = '/signin';
-  static const String HOME = '/home';
-  static const String DETAILS = '/details';
+  static const LOGIN = '/login';
+  static const SIGNUP = '/signup';
+  static const RESET_PASSWORD = '/reset-password';
+  static const HOME = '/home';
+  static const PROPERTY_DETAILS = '/property-details';
+  static const WISHLIST = '/wishlist';
+  static const SEARCH_FILTER = '/search-filter';
+  static const CONTACT_FORM = '/contact-form';
 }

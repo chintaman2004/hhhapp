@@ -17,6 +17,14 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+android {
+    defaultConfig {
+        // ...
+        manifestPlaceholders = [
+            'appAuthRedirectScheme': 'com.example.your-app' // Your package name
+        ]
+    }
+}
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
